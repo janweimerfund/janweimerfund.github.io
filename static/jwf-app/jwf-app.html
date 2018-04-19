@@ -1,0 +1,15 @@
+<link rel="import" href="../app-layout/app-layout.html">
+
+<dom-module id="jwf-app">
+  <template>
+    <app-header-layout>
+      <slot name="header"></slot>
+      <slot name="content"></slot>
+    </app-header-layout>
+  </template>
+  <script>
+    Polymer({
+      is: "jwf-app"
+    })
+  </script>
+</dom-module>
