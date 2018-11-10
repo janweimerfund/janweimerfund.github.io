@@ -3,35 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>JWF</title>
-    
     <link rel="import" href="/static/app-layout/app-layout.html">
     <link rel="import" href="/static/paper-card/paper-card.html">
-    
-    
-    <link rel="import" href="/static/styles/jwf.html">
-    
-    
+    <link rel="import" href="/styles/jwf.html">
+    <link href="https://vjs.zencdn.net/7.1.0/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" href="/video.css">
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
   </head>
   <body>
-  
+
     <app-header-layout fullbleed>
-      
+
       <app-header slot="header" fixed>
         <app-toolbar>
           <div main-title><a href="/">JWF</a></div>
-          
+
             <a href="/about/">About</a>
-          
+
             <a href="/events/">Events</a>
-          
+
             <a href="/contact/">Contact</a>
-          
+
         </app-toolbar>
-        
+
       </app-header>
-      
+
       <div class="content">
-      
+
+	<video class="video-js vjs-default-skin" controls data-setup="{}" preload=auto>
+	    <source src="./assets/JANWEB2.webm" type="video/webm">
+	</video>
 <paper-card heading="In Memory of Jan Weimer">
   <div class="card-content">
 <p>On Friday, April 13, 2007 , we lost one of the nation’s most notable and talented food minds. Jan Weimer was an encyclopedic master of all aspects of food: its preparation, sourcing, marketing language and equipment. Widely traveled, she was the free lance author of hundreds of articles, in dozens of publications, some introducing groundbreaking innovations in American Cuisine. Her book on kitchen design is the most comprehensive guide on design principles, sourcing and legal aspects on the shelf. Jan was an Einstein of recipe development. As a genius does, she cooked in her head and could read a recipe like a conductor sight reads sheet music. She won numerous awards for her intellectual achievement, including best paper at the 1999 Appliance Manufacturer Conference and Expo, a rare achievement for a woman and non-engineer. Her career spanned a comprehensive tour of the food world as Executive Food Editor of Bon Appetit Magazine, Assistant Food editor of the San Francisco Chronicle, Chief Culinary Officer of Chefstore.com and consultant to Princess Cruises, Covent Garden Soup Company, Trefethen Winery, numerous restaurants, and many happy home chefs in their new kitchens.</p>
@@ -112,6 +114,7 @@
 
       </div>
     </app-header-layout>
-  
+
+    <script src="https://vjs.zencdn.net/7.1.0/video.js"></script>
   </body>
 </html>
