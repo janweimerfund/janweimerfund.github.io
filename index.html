@@ -2,36 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>JWF</title>
+    <title>Jan Weimer Fund</title>
     <link rel="import" href="/static/app-layout/app-layout.html">
     <link rel="import" href="/static/paper-card/paper-card.html">
     <link rel="import" href="/styles/jwf.html">
     <link href="https://vjs.zencdn.net/7.1.0/video-js.css" rel="stylesheet">
-    <link rel="stylesheet" href="/video.css">
+    <link rel="stylesheet" href="/styles/video.css">
     <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
     <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+<style>
+video {
+    object-fit: fill;
+        @apply --layout-flex;
+}
+</style>
   </head>
   <body>
 
     <app-header-layout fullbleed>
-
       <app-header slot="header" fixed>
         <app-toolbar>
-          <div main-title><a href="/">JWF</a></div>
-
-            <a href="/about/">About</a>
-
-            <a href="/events/">Events</a>
-
-            <a href="/contact/">Contact</a>
-
+          <div main-title><a href="/">Jan Weimer Fund</a></div>
         </app-toolbar>
-
       </app-header>
-
       <div class="content">
-
-	<video class="video-js vjs-default-skin" controls data-setup="{}" preload=auto>
+	<video class="video-js vjs-default-skin" height="auto" width="auto" controls data-setup='{"fluid": true}' preload=auto>
 	    <source src="./assets/JANWEB2.webm" type="video/webm">
 	</video>
 <paper-card heading="In Memory of Jan Weimer">
